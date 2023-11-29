@@ -4,7 +4,7 @@ export default function UserCard({ card }) {
     if (card.html_url) {
         return (
             <main className='d-flex justify-content-center align-items-center' style={{ height: '70vh' }}>
-                <div className='col-10 col-md-12 col-lg-7'>
+                <div className='col-11 col-md-12 col-lg-7'>
                     <div className='d-md-flex align-items-center rounded border p-4 px-md-4'>
                         {/* user avatar image */}
                         <div>
@@ -55,14 +55,14 @@ export default function UserCard({ card }) {
                                         </a>
                                     </div>
                                     {/* user follower count */}
-                                    <div className='mx-md-4 my-2 my-md-0'>
+                                    <div className='mx-md-4 my-3 my-md-0'>
                                         <a href={card.followers_url} className='text-secondary text-white bg-success rounded p-1 px-2'>
                                             <span>Followers</span>
                                             <span className='mx-2'>{card.followers}</span>
                                         </a>
                                     </div>
                                     {/* user following count */}
-                                    <div className='my-2 my-md-0' >
+                                    <div className='my-3 my-md-0' >
                                         <a href={card.following_url} className='text-secondary text-white bg-warning rounded p-1 px-2'>
                                             <span>Following</span>
                                             <span className='mx-2'>{card.following}</span>
