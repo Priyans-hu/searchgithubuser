@@ -18,7 +18,10 @@ export default function SearchForm({ username, setUsername, search }) {
                             name='username' 
                             value={username} 
                             onChange={
-                                (e) => setUsername(e.target.value)
+                                (e) => {
+                                    setUsername(e.target.value);
+                                    // search(username);
+                                }
                             }
                         />
                         <label htmlFor='username'>Username</label>
